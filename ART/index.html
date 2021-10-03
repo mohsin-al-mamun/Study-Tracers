@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="inputDiv">
+           <h3> Abdur Rahman Talha</h3>
+           <div id="inputsec">
+               <p>Date : </p><input class= "input" type="date" id="date" >
+               <p>Target: </p><select class= "input"  id="target" >
+                <option value="3" > 3 </option>
+            </select>
+               <p>Completed: </p><input class= "input" type="number" id="completed" placeholder="Time in hours">
+               <!-- <p>Pendings: </p><input class= "input" type="number" id="pending" placeholder="Time in hours"> -->
+               
+              <br> <button id="submit">Submit</button> <br>
+            
+               
+           </div>
+
+        </div>
+        <div id="outputdiv">
+            <table id="table">
+                <caption id="caption">Status of my day to day Studies </caption>
+                <thead>
+                    <tr>
+                    <th>Dates</th>
+                    <th>Target</th>
+                    <th>Completed</th>
+                    <th>Pendings</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- values will come here from JS file -->
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+            <div id="clearDiv">
+                <button id="clearbtn"> Clear all </button>
+            </div>
+        </div>
+
+       
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
